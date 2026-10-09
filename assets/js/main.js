@@ -7,19 +7,19 @@
   "use strict";
 
   var STORAGE_KEY = "qozmix-lang";
-  var EMAIL = "hello@qozmixai.tech";
+  var EMAIL = "Jannat@qozmixai.tech";
 
   var META = {
     en: {
       title: "QozmixAI — AI social media marketing for SMEs in Korea",
-      description: "QozmixAI plans a month of social media content for small businesses in Korea, writes on-brand posts and designs ready-to-post carousels. You review and approve.",
+      description: "QozmixAI plans a month of social media content for small businesses in Korea, writes on-brand posts in natural Korean or English and designs ready-to-post carousels. You review and approve.",
       toggle: "한국어",
       mailSubject: "QozmixAI early access",
       mailBody: "Hi QozmixAI team,\n\nBusiness name:\nIndustry:\nInstagram / website:\nWhat I'd like help with:\n\nThanks!"
     },
     ko: {
       title: "QozmixAI — 국내 중소기업을 위한 AI 소셜 미디어 마케팅",
-      description: "QozmixAI가 한 달 치 SNS 콘텐츠를 기획하고, 브랜드에 맞는 게시물과 바로 올릴 수 있는 카드뉴스를 만들어 드립니다. 사장님은 확인하고 승인만 하세요.",
+      description: "QozmixAI가 한 달 치 SNS 콘텐츠를 기획하고, 브랜드에 맞는 게시물을 자연스러운 한국어 또는 영어로 작성하고, 바로 올릴 수 있는 카드뉴스까지 만들어 드립니다. 사장님은 확인하고 승인만 하세요.",
       toggle: "English",
       mailSubject: "QozmixAI 얼리 액세스 신청",
       mailBody: "안녕하세요, QozmixAI 팀.\n\n업체명:\n업종:\n인스타그램 / 웹사이트:\n도움받고 싶은 부분:\n\n감사합니다."
@@ -36,7 +36,7 @@
 
     "hero.eyebrow": "국내 중소기업을 위한 AI 소셜 미디어 마케팅",
     "hero.title": "편집은 줄이고,<br><span class=\"accent\">판매는 늘리고.</span>",
-    "hero.lead": "QozmixAI가 한 달 치 SNS 콘텐츠를 기획하고, 브랜드에 맞는 게시물을 작성하고, 바로 올릴 수 있는 카드뉴스까지 디자인합니다. 사장님은 확인하고 승인만 하세요. 남는 시간은 본업에 집중하시면 됩니다.",
+    "hero.lead": "QozmixAI가 한 달 치 SNS 콘텐츠를 기획하고, 브랜드에 맞는 게시물을 자연스러운 한국어 또는 영어로 작성하고, 바로 올릴 수 있는 카드뉴스까지 디자인합니다. 사장님은 확인하고 승인만 하세요. 남는 시간은 본업에 집중하시면 됩니다.",
     "hero.cta": "얼리 액세스 신청",
     "hero.secondary": "이용 방법 보기",
     "hero.badge1": "K-Startup 그랜드 챌린지 · Top 20",
@@ -63,12 +63,16 @@
 
     "problem.eyebrow": "문제",
     "problem.title": "고객은 SNS를 보고 업체를 판단합니다. 문제는 꾸준히 운영하기가 어렵다는 것입니다.",
-    "problem.c1.title": "멈춘 SNS는 고객을 놓칩니다",
-    "problem.c1.text": "고객은 예약하거나 구매하기 전에 인스타그램이나 블로그를 먼저 확인합니다. 몇 달째 업데이트가 없는 계정을 보면 망설이게 됩니다.",
-    "problem.c2.title": "대행사는 비싸고, 직접 하면 시간이 너무 걸립니다",
-    "problem.c2.text": "작은 업체는 매달 대행사에 비용을 내거나, 게시물 하나를 위해 기획·작성·디자인·플랫폼별 수정까지 몇 시간씩 직접 씁니다.",
+    "problem.s1": "브랜드를 믿을지 판단할 때 SNS부터 확인하는 고객 비율",
+    "problem.s2": "업체 SNS가 방치되어 보이면 구매를 포기하는 고객 비율",
+    "problem.s3": "중소기업이 매달 SNS 관리에 쓰는 비용",
+    "problem.s4num": "4–6시간",
+    "problem.s4": "직접 만들 때 게시물 하나에 드는 시간",
+    "problem.c1.title": "플랫폼이 너무 많습니다",
+    "problem.c1.text": "인스타그램, 네이버 블로그, 유튜브, 틱톡에 맞춰 같은 콘텐츠를 일일이 다시 만들다 보면, 작은 팀에는 시간이 남지 않습니다.",
     "problem.c3.title": "외국인 창업자에게 한국 SNS는 어렵습니다",
     "problem.c3.text": "한국에 진출한 외국 스타트업에는 한국 고객에게 자연스럽게 읽히는 콘텐츠가 필요합니다. 기계 번역으로는 부족합니다.",
+    "problem.note": "시장 수치는 외부 리서치 자료를 기준으로 하며, 요청 시 출처를 제공합니다.",
 
     "how.eyebrow": "이용 방법",
     "how.title": "브랜드 정보만 있으면, 세 단계로 게시물이 완성됩니다",
@@ -79,6 +83,16 @@
     "how.s3.title": "바로 올릴 수 있는 콘텐츠 완성",
     "how.s3.text": "AI가 문구, 캡션, 해시태그를 작성하고 브랜드 템플릿에 맞춰 단일 게시물이나 카드뉴스로 디자인합니다. 원하는 부분을 수정하고 최종 승인한 뒤 내보내세요.",
 
+    "res.eyebrow": "QozmixAI가 만들어갈 변화",
+    "res.title": "한 달에 약 1시간이면 SNS 운영 끝",
+    "res.s1num": "월 1시간",
+    "res.s1": "한 달 치 콘텐츠 기획·제작·예약에 드는 시간",
+    "res.s2num": "15시간+",
+    "res.s2": "매달 절약되는 시간",
+    "res.s3": "매달 절감되는 SNS 관리 비용",
+    "res.s4": "지원 플랫폼: 인스타그램, 네이버 블로그, 유튜브, 틱톡",
+    "res.note": "개발 중인 기능을 포함한 정식 출시 기준 목표치입니다.",
+
     "features.eyebrow": "기능",
     "features.title": "파일럿에서 사용할 수 있는 기능과 개발 중인 기능",
     "features.sub": "QozmixAI는 파일럿 파트너와 함께 단계적으로 만들어가고 있습니다. 각 기능의 현재 상태를 그대로 보여드립니다.",
@@ -88,16 +102,14 @@
     "f.brand.text": "브랜드 설문과 참고 게시물 AI 분석으로 컬러, 폰트, 레이아웃을 제안하고, 사장님이 직접 확정합니다.",
     "f.plan.title": "월간 콘텐츠 계획",
     "f.plan.text": "원하는 게시물 수와 콘텐츠 구성을 정하세요. 뻔한 템플릿이 아니라 우리 업체에 맞춘 아이디어를 기획합니다.",
-    "f.copy.title": "AI 문구, 캡션, 해시태그",
-    "f.copy.text": "승인한 아이디어마다 브랜드 말투로 문구를 작성하고, 슬라이드에 맞게 분량을 조정합니다.",
+    "f.copy.title": "자연스러운 한국어·영어 문구",
+    "f.copy.text": "브랜드 말투에 맞춘 문구, 캡션, 해시태그를 영어 또는 네이버 HyperCLOVA X 기반의 자연스러운 한국어로 작성합니다. 파일럿 기간에는 팀의 한국인 검수자가 모든 게시물을 확인합니다.",
     "f.templates.title": "브랜드 템플릿 및 편집기",
     "f.templates.text": "단일 게시물과 최대 10장의 카드뉴스를 브랜드 템플릿으로 만들고, 내보내기 전에 자유롭게 수정할 수 있습니다.",
     "f.approval.title": "2단계 승인",
     "f.approval.text": "승인 없이는 아무것도 나가지 않습니다. 먼저 아이디어를 승인하고, 그다음 최종 디자인을 승인합니다.",
     "f.facts.title": "정확한 홍보 정보",
     "f.facts.text": "AI가 가격, 할인, 날짜, 후기를 지어내지 않습니다. 사장님이 승인한 정보만 게시물에 들어갑니다.",
-    "f.korean.title": "자연스러운 한국어 콘텐츠",
-    "f.korean.text": "번역투가 아닌 자연스러운 한국어 문구. 게시 전에 한국인 검수자가 확인합니다.",
     "f.publish.title": "예약 및 자동 게시",
     "f.publish.text": "인스타그램, 페이스북, 링크드인, 네이버 블로그, 유튜브, 틱톡에 바로 게시합니다.",
     "f.trends.title": "트렌드",
@@ -232,14 +244,6 @@
     img.onload = function () { onLoad(img); };
     img.src = src;
   }
-
-  // Logo mark in the header (assets/img/logo-mark.png)
-  document.querySelectorAll(".brand-mark[data-src]").forEach(function (el) {
-    loadImage(el.getAttribute("data-src"), "", function (img) {
-      el.appendChild(img);
-      el.hidden = false;
-    });
-  });
 
   // Team photos (assets/img/team/*.jpg). Initials stay if a photo is missing.
   document.querySelectorAll(".avatar[data-photo]").forEach(function (el) {

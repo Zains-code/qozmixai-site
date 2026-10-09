@@ -4,21 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>QozmixAI — AI social media marketing for SMEs in Korea</title>
-  <meta name="description" content="QozmixAI plans a month of social media content for small businesses in Korea, writes on-brand posts and designs ready-to-post carousels. You review and approve.">
+  <meta name="description" content="QozmixAI plans a month of social media content for small businesses in Korea, writes on-brand posts in natural Korean or English and designs ready-to-post carousels. You review and approve.">
   <link rel="canonical" href="https://qozmixai.tech/">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#17BCCB">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="QozmixAI">
   <meta property="og:title" content="QozmixAI — Less editing, more selling">
   <meta property="og:description" content="AI social media marketing for SMEs and foreign startups in Korea. Plan, write and design a month of posts, then approve in a few clicks.">
   <meta property="og:url" content="https://qozmixai.tech/">
-  <meta property="og:image" content="https://qozmixai.tech/assets/img/logo.png">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://qozmixai.tech/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="QozmixAI — Less editing, more selling">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Quicksand:wght@700&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 
   <script type="application/ld+json">
@@ -29,11 +34,11 @@
     "url": "https://qozmixai.tech/",
     "logo": "https://qozmixai.tech/assets/img/logo.png",
     "slogan": "Less editing, more selling",
-    "email": "hello@qozmixai.tech",
+    "email": "Jannat@qozmixai.tech",
     "address": { "@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR" },
     "founder": [
-      { "@type": "Person", "name": "Jannat Shreya", "jobTitle": "Founder & CEO" },
-      { "@type": "Person", "name": "Zain Khaliq", "jobTitle": "Co-founder & CTO" }
+      { "@type": "Person", "name": "Jannat Shreya", "jobTitle": "Founder & CEO", "sameAs": "https://www.linkedin.com/in/jannatshreya" },
+      { "@type": "Person", "name": "Zain Khaliq", "jobTitle": "Co-founder & CTO", "sameAs": "https://www.linkedin.com/in/zain-khaliq-b28051433" }
     ]
   }
   </script>
@@ -71,7 +76,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="QozmixAI home">
-        <span class="brand-mark" data-src="assets/img/logo-mark.png" hidden></span>
+        <img class="brand-mark" src="assets/img/logo-mark.svg" alt="" width="56" height="40">
         <span class="wordmark">Qozmix<span>AI</span></span>
       </a>
       <nav class="nav" id="site-nav" aria-label="Main">
@@ -99,7 +104,7 @@
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="hero.eyebrow">AI social media marketing for SMEs in Korea</p>
           <h1 data-i18n-html="hero.title">Less editing,<br><span class="accent">more selling.</span></h1>
-          <p class="lead" data-i18n="hero.lead">QozmixAI plans a month of social media content for your business, writes on-brand posts and designs ready-to-post carousels. You review, approve and get back to running your business.</p>
+          <p class="lead" data-i18n="hero.lead">QozmixAI plans a month of social media content for your business, writes on-brand posts in natural Korean or English, and designs ready-to-post carousels. You review, approve and get back to running your business.</p>
           <div class="hero-actions">
             <a class="btn btn-cta" href="#contact"><span data-i18n="hero.cta">Request early access</span><svg class="icon"><use href="#i-arrow"/></svg></a>
             <a class="btn btn-ghost" href="#how" data-i18n="hero.secondary">See how it works</a>
@@ -181,16 +186,29 @@
           <p class="eyebrow" data-i18n="problem.eyebrow">The problem</p>
           <h2 data-i18n="problem.title">Customers judge your business by its social media. Keeping it active is the hard part.</h2>
         </div>
-        <div class="grid grid-3">
+        <div class="stats">
+          <div class="stat">
+            <p class="stat-num">81%+</p>
+            <p class="stat-label" data-i18n="problem.s1">of customers check a brand's social media to decide whether to trust it</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">50%+</p>
+            <p class="stat-label" data-i18n="problem.s2">abandon a purchase when a business's social accounts look inactive</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">₩2M–4.5M</p>
+            <p class="stat-label" data-i18n="problem.s3">what SMEs spend every month on social media management</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num" data-i18n="problem.s4num">4–6 hrs</p>
+            <p class="stat-label" data-i18n="problem.s4">spent on every single post when doing it in-house</p>
+          </div>
+        </div>
+        <div class="grid grid-2">
           <article class="card card-mint">
-            <span class="card-icon"><svg class="icon"><use href="#i-clock"/></svg></span>
-            <h3 data-i18n="problem.c1.title">Inactive channels lose customers</h3>
-            <p data-i18n="problem.c1.text">People check your Instagram or blog before they book or buy. A feed that hasn't been updated in months makes them hesitate.</p>
-          </article>
-          <article class="card card-mint">
-            <span class="card-icon"><svg class="icon"><use href="#i-wallet"/></svg></span>
-            <h3 data-i18n="problem.c2.title">Agencies are expensive. DIY takes hours.</h3>
-            <p data-i18n="problem.c2.text">Small businesses either pay an agency every month or spend hours on each post themselves: planning, writing, designing and resizing it for every platform.</p>
+            <span class="card-icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+            <h3 data-i18n="problem.c1.title">Too many platforms</h3>
+            <p data-i18n="problem.c1.text">Reworking the same content by hand for Instagram, Naver Blog, YouTube and TikTok eats up time small teams don't have.</p>
           </article>
           <article class="card card-mint">
             <span class="card-icon"><svg class="icon"><use href="#i-globe"/></svg></span>
@@ -198,6 +216,7 @@
             <p data-i18n="problem.c3.text">Foreign startups in Korea need content that sounds natural to Korean customers. Machine-translated posts don't.</p>
           </article>
         </div>
+        <p class="source-note" data-i18n="problem.note">Market figures are from third-party research. Sources are available on request.</p>
       </div>
     </section>
 
@@ -231,6 +250,35 @@
       </div>
     </section>
 
+    <!-- RESULTS -->
+    <section class="section results" id="results">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow eyebrow-dark" data-i18n="res.eyebrow">What QozmixAI is built to deliver</p>
+          <h2 data-i18n="res.title">Your social media, handled in about an hour a month</h2>
+        </div>
+        <div class="stats stats-dark">
+          <div class="stat">
+            <p class="stat-num" data-i18n="res.s1num">1 hr/month</p>
+            <p class="stat-label" data-i18n="res.s1">to plan, produce and schedule a month of content</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num" data-i18n="res.s2num">15+ hrs</p>
+            <p class="stat-label" data-i18n="res.s2">saved every month</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">₩4M+</p>
+            <p class="stat-label" data-i18n="res.s3">saved every month on social media management</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">4+</p>
+            <p class="stat-label" data-i18n="res.s4">platforms: Instagram, Naver Blog, YouTube and TikTok</p>
+          </div>
+        </div>
+        <p class="source-note" data-i18n="res.note">Targets for the full product at launch, including features still in development.</p>
+      </div>
+    </section>
+
     <!-- FEATURES -->
     <section class="section" id="features">
       <div class="container">
@@ -254,8 +302,8 @@
           </article>
           <article class="card">
             <span class="card-icon"><svg class="icon"><use href="#i-sparkle"/></svg></span>
-            <h4 data-i18n="f.copy.title">AI copy, captions &amp; hashtags</h4>
-            <p data-i18n="f.copy.text">Copy for every approved idea, written in your brand's voice and shaped to fit each slide.</p>
+            <h4 data-i18n="f.copy.title">Natural Korean &amp; English copy</h4>
+            <p data-i18n="f.copy.text">Copy, captions and hashtags in your brand's voice, in English or in natural Korean powered by Naver HyperCLOVA X. During the pilot, Korean reviewers on our team check every post.</p>
           </article>
           <article class="card">
             <span class="card-icon"><svg class="icon"><use href="#i-layers"/></svg></span>
@@ -276,11 +324,6 @@
 
         <h3 class="group-title"><span class="tag tag-soon" data-i18n="features.soon">In development</span></h3>
         <div class="grid grid-3">
-          <article class="card card-soon">
-            <span class="card-icon"><svg class="icon"><use href="#i-globe"/></svg></span>
-            <h4 data-i18n="f.korean.title">Natural Korean content</h4>
-            <p data-i18n="f.korean.text">Korean copy that sounds native, not translated, checked by Korean reviewers before it's posted.</p>
-          </article>
           <article class="card card-soon">
             <span class="card-icon"><svg class="icon"><use href="#i-send"/></svg></span>
             <h4 data-i18n="f.publish.title">Scheduling &amp; auto-publishing</h4>
@@ -428,12 +471,14 @@
             <h3>Jannat Shreya</h3>
             <p class="role" data-i18n="team.jannat.role">Founder &amp; CEO</p>
             <p class="bio" data-i18n="team.jannat.bio">B.S. Business Administration (minor in CSE), Seoul National University · Vice President, Indian Students and Researchers in Korea</p>
+            <a class="linkedin" href="https://www.linkedin.com/in/jannatshreya" target="_blank" rel="noopener" aria-label="Jannat Shreya on LinkedIn">LinkedIn</a>
           </article>
           <article class="person">
             <div class="avatar" data-photo="assets/img/team/zain.jpg" data-alt="Zain Khaliq">ZK</div>
             <h3>Zain Khaliq</h3>
             <p class="role" data-i18n="team.zain.role">Co-founder &amp; CTO</p>
             <p class="bio" data-i18n="team.zain.bio">B.S. Computer Science and Engineering, Seoul National University · Media Coordinator, Pakistan Students Association in Korea</p>
+            <a class="linkedin" href="https://www.linkedin.com/in/zain-khaliq-b28051433" target="_blank" rel="noopener" aria-label="Zain Khaliq on LinkedIn">LinkedIn</a>
           </article>
           <article class="person">
             <div class="avatar" data-photo="assets/img/team/aliza.jpg" data-alt="Aliza Khan">AK</div>
@@ -458,6 +503,7 @@
             <div>
               <h3>Dr. Mohammed Iqbal Khazi</h3>
               <p class="bio" data-i18n="team.iqbal.bio">Research Associate Professor, Kyung Hee University · President, Indian Students and Researchers in Korea · CEO, IKBIC</p>
+              <a class="linkedin linkedin-sm" href="https://www.linkedin.com/in/mohammed-iqbal-khazi-351b13245" target="_blank" rel="noopener" aria-label="Dr. Mohammed Iqbal Khazi on LinkedIn">LinkedIn</a>
             </div>
           </article>
         </div>
@@ -474,8 +520,8 @@
             <p data-i18n="cta.text">We're working with a small number of businesses first, so we can get every detail right. Tell us about your business and we'll get back to you.</p>
           </div>
           <div class="cta-actions">
-            <a class="btn btn-cta" data-mailto href="mailto:hello@qozmixai.tech?subject=QozmixAI%20early%20access"><svg class="icon"><use href="#i-mail"/></svg><span data-i18n="cta.button">Email us</span></a>
-            <a class="cta-email" href="mailto:hello@qozmixai.tech">hello@qozmixai.tech</a>
+            <a class="btn btn-cta" data-mailto href="mailto:Jannat@qozmixai.tech?subject=QozmixAI%20early%20access"><svg class="icon"><use href="#i-mail"/></svg><span data-i18n="cta.button">Email us</span></a>
+            <a class="cta-email" href="mailto:Jannat@qozmixai.tech">Jannat@qozmixai.tech</a>
           </div>
         </div>
       </div>
@@ -489,7 +535,7 @@
         <p class="footer-tag" data-i18n="footer.tag">Less editing, more selling.</p>
       </div>
       <div class="footer-links">
-        <a href="mailto:hello@qozmixai.tech">hello@qozmixai.tech</a>
+        <a href="mailto:Jannat@qozmixai.tech">Jannat@qozmixai.tech</a>
         <a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a>
       </div>
       <p class="footer-copy" data-i18n="footer.copy">© 2026 QozmixAI · Seoul, South Korea</p>
