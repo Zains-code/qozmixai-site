@@ -10,7 +10,7 @@ Landing page for QozmixAI. It's plain HTML, CSS and JavaScript with no build ste
 Already included (recreated as vectors from the official logo):
 `assets/img/logo-mark.svg` (header), `favicon.svg`, `apple-touch-icon.png`, `logo.png` (1024×1024) and `og-image.png` (1200×630 link preview for KakaoTalk, LinkedIn and Slack).
 
-Still to upload on GitHub (**Add file → Upload files**), using these exact names:
+Still to upload on GitHub (**Add file → Upload files**). Use these names. Any of .jpg, .jfif, .jpeg, .png or .webp works, and a capitalized first letter is fine (e.g. `Jannat.jfif`):
 
 | File | What it is |
 |---|---|

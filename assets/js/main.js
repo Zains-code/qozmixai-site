@@ -237,15 +237,40 @@
   }
 
   // Optional images: only shown once the file exists in the repo.
-  function loadImage(src, alt, onLoad) {
-    var img = new Image();
-    img.alt = alt || "";
-    img.decoding = "async";
-    img.onload = function () { onLoad(img); };
-    img.src = src;
+  // GitHub Pages is case-sensitive, so for "assets/img/team/jannat" this tries
+  // jannat.jpg, jannat.jfif, ..., then Jannat.jpg, Jannat.jfif, ... and uses the first that exists.
+  var EXTENSIONS = ["jpg", "jfif", "jpeg", "png", "webp", "JPG", "JFIF", "JPEG", "PNG"];
+
+  function candidates(base) {
+    var slash = base.lastIndexOf("/");
+    var dir = base.slice(0, slash + 1);
+    var name = base.slice(slash + 1);
+    var names = [name, name.charAt(0).toUpperCase() + name.slice(1), name.toUpperCase()];
+    var list = [];
+    names.forEach(function (n) {
+      EXTENSIONS.forEach(function (ext) {
+        var src = dir + n + "." + ext;
+        if (list.indexOf(src) === -1) list.push(src);
+      });
+    });
+    return list;
   }
 
-  // Team photos (assets/img/team/*.jpg). Initials stay if a photo is missing.
+  function loadImage(base, alt, onLoad) {
+    var list = /\.[a-z]+$/i.test(base) ? [base] : candidates(base);
+    var i = 0;
+    (function next() {
+      if (i >= list.length) return;
+      var img = new Image();
+      img.alt = alt || "";
+      img.decoding = "async";
+      img.onload = function () { onLoad(img); };
+      img.onerror = next;
+      img.src = list[i++];
+    })();
+  }
+
+  // Team photos (assets/img/team/<name>.jpg/.jfif/...). Initials stay if a photo is missing.
   document.querySelectorAll(".avatar[data-photo]").forEach(function (el) {
     loadImage(el.getAttribute("data-photo"), el.getAttribute("data-alt"), function (img) {
       el.textContent = "";
@@ -253,7 +278,7 @@
     });
   });
 
-  // Screenshot gallery (assets/img/screens/*.png). The section appears once at least one exists.
+  // Screenshot gallery (assets/img/screens/<name>.png/.jpg/...). The section appears once at least one exists.
   var gallery = document.getElementById("gallery");
   document.querySelectorAll(".gallery figure[data-src]").forEach(function (fig) {
     var caption = fig.querySelector("figcaption");
