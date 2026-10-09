@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QozmixAI — AI social media marketing for SMEs in Korea</title>
+  <meta name="description" content="QozmixAI plans a month of social media content for small businesses in Korea, writes on-brand posts and designs ready-to-post carousels. You review and approve.">
+  <link rel="canonical" href="https://qozmixai.tech/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="QozmixAI">
+  <meta property="og:title" content="QozmixAI — Less editing, more selling">
+  <meta property="og:description" content="AI social media marketing for SMEs and foreign startups in Korea. Plan, write and design a month of posts, then approve in a few clicks.">
+  <meta property="og:url" content="https://qozmixai.tech/">
+  <meta property="og:image" content="https://qozmixai.tech/assets/img/logo.png">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "QozmixAI",
+    "url": "https://qozmixai.tech/",
+    "logo": "https://qozmixai.tech/assets/img/logo.png",
+    "slogan": "Less editing, more selling",
+    "email": "hello@qozmixai.tech",
+    "address": { "@type": "PostalAddress", "addressLocality": "Seoul", "addressCountry": "KR" },
+    "founder": [
+      { "@type": "Person", "name": "Jannat Shreya", "jobTitle": "Founder & CEO" },
+      { "@type": "Person", "name": "Zain Khaliq", "jobTitle": "Co-founder & CTO" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-1.5a1.5 1.5 0 0 0-1 2.6A1.5 1.5 0 0 1 14.4 21 10 10 0 0 1 12 22z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15.5" cy="7.5" r="1"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6 5.6 1.9-5.6 1.9L12 18l-1.9-5.6-5.6-1.9 5.6-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M22 7 13.5 15.5l-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+      <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m22 8-6 4 6 4V8z"/></symbol>
+      <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+      <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v8h14v-8"/><path d="M10 21v-5h4v5"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M16 15h2"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+      <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="QozmixAI home">
+        <span class="brand-mark" data-src="assets/img/logo-mark.png" hidden></span>
+        <span class="wordmark">Qozmix<span>AI</span></span>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="#team" data-i18n="nav.team">Team</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Change language / 언어 변경">한국어</button>
+        <a class="btn btn-cta btn-sm hide-mobile" href="#contact" data-i18n="nav.cta">Request early access</a>
+        <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+          <svg class="icon"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-deco hero-deco-1" aria-hidden="true"></div>
+      <div class="hero-deco hero-deco-2" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">AI social media marketing for SMEs in Korea</p>
+          <h1 data-i18n-html="hero.title">Less editing,<br><span class="accent">more selling.</span></h1>
+          <p class="lead" data-i18n="hero.lead">QozmixAI plans a month of social media content for your business, writes on-brand posts and designs ready-to-post carousels. You review, approve and get back to running your business.</p>
+          <div class="hero-actions">
+            <a class="btn btn-cta" href="#contact"><span data-i18n="hero.cta">Request early access</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#how" data-i18n="hero.secondary">See how it works</a>
+          </div>
+          <ul class="hero-badges">
+            <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="hero.badge1">K-Startup Grand Challenge · Top 20</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="hero.badge2">Kyung Hee Glofers Hackathon · Top 11</span></li>
+            <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="hero.badge3">Pilot with IKBIC</span></li>
+          </ul>
+        </div>
+
+        <!-- Illustrative product preview (based on the real Posts screen) -->
+        <div class="hero-visual">
+          <div class="mock">
+            <div class="mock-top">
+              <span class="mock-title" data-i18n="mock.title">Posts · October 2026</span>
+              <span class="mock-saved"><svg class="icon"><use href="#i-check"/></svg><span data-i18n="mock.saved">Saved</span></span>
+            </div>
+
+            <div class="mock-card">
+              <div class="mix-head">
+                <strong data-i18n="mock.mix">Creative Mix</strong>
+                <span class="pill">100%</span>
+              </div>
+              <div class="mix-row">
+                <span class="mix-label edu" data-i18n="mock.edu">Educational</span>
+                <span class="mix-bar"><span class="mix-fill edu" style="width:60%"></span></span>
+                <span class="mix-val">60%</span>
+              </div>
+              <div class="mix-row">
+                <span class="mix-label promo" data-i18n="mock.promo">Promotional</span>
+                <span class="mix-bar"><span class="mix-fill promo" style="width:25%"></span></span>
+                <span class="mix-val">25%</span>
+              </div>
+              <div class="mix-row">
+                <span class="mix-label comm" data-i18n="mock.comm">Community</span>
+                <span class="mix-bar"><span class="mix-fill comm" style="width:15%"></span></span>
+                <span class="mix-val">15%</span>
+              </div>
+              <p class="mix-foot" data-i18n="mock.planned">18 planned posts</p>
+            </div>
+
+            <div class="mock-card idea">
+              <div class="thumb thumb-a"><span></span><span></span><span></span></div>
+              <div class="idea-body">
+                <h3 data-i18n="mock.idea1">5 eyelash extension aftercare mistakes</h3>
+                <span class="status status-draft" data-i18n="mock.draft">Draft ready</span>
+                <div class="idea-actions">
+                  <span class="mbtn"><svg class="icon"><use href="#i-pen"/></svg><span data-i18n="mock.edit">Review/Edit</span></span>
+                  <span class="mbtn"><svg class="icon"><use href="#i-refresh"/></svg><span data-i18n="mock.replace">Replace</span></span>
+                </div>
+                <span class="mbtn mbtn-dark"><svg class="icon"><use href="#i-check"/></svg><span data-i18n="mock.approve">Approve</span></span>
+              </div>
+            </div>
+
+            <div class="mock-card idea">
+              <div class="thumb thumb-b"><span></span><span></span><span></span></div>
+              <div class="idea-body">
+                <h3 data-i18n="mock.idea2">October personal colour offer</h3>
+                <span class="status status-ok" data-i18n="mock.final">Final approved</span>
+                <p class="idea-note" data-i18n="mock.carousel">Carousel · 5 slides · ready to export</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="float-chip" aria-hidden="true">
+            <svg class="icon"><use href="#i-shield"/></svg>
+            <span data-i18n="mock.chip">You approve every post</span>
+          </div>
+          <p class="mock-caption" data-i18n="mock.caption">Illustration of the MVP · sample business “Hana Beauty Studio”</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="problem.eyebrow">The problem</p>
+          <h2 data-i18n="problem.title">Customers judge your business by its social media. Keeping it active is the hard part.</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card card-mint">
+            <span class="card-icon"><svg class="icon"><use href="#i-clock"/></svg></span>
+            <h3 data-i18n="problem.c1.title">Inactive channels lose customers</h3>
+            <p data-i18n="problem.c1.text">People check your Instagram or blog before they book or buy. A feed that hasn't been updated in months makes them hesitate.</p>
+          </article>
+          <article class="card card-mint">
+            <span class="card-icon"><svg class="icon"><use href="#i-wallet"/></svg></span>
+            <h3 data-i18n="problem.c2.title">Agencies are expensive. DIY takes hours.</h3>
+            <p data-i18n="problem.c2.text">Small businesses either pay an agency every month or spend hours on each post themselves: planning, writing, designing and resizing it for every platform.</p>
+          </article>
+          <article class="card card-mint">
+            <span class="card-icon"><svg class="icon"><use href="#i-globe"/></svg></span>
+            <h3 data-i18n="problem.c3.title">Korean platforms are hard for foreign founders</h3>
+            <p data-i18n="problem.c3.text">Foreign startups in Korea need content that sounds natural to Korean customers. Machine-translated posts don't.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section-white" id="how">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
+          <h2 data-i18n="how.title">From your brand to ready-to-post content in three steps</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">1</span>
+            <span class="card-icon"><svg class="icon"><use href="#i-palette"/></svg></span>
+            <h3 data-i18n="how.s1.title">Set up your brand once</h3>
+            <p data-i18n="how.s1.text">Tell us about your business, customers, tone of voice and colours, and upload a few posts you like. QozmixAI learns your brand style.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <span class="card-icon"><svg class="icon"><use href="#i-calendar"/></svg></span>
+            <h3 data-i18n="how.s2.title">Approve your monthly plan</h3>
+            <p data-i18n="how.s2.text">Get a month of post ideas balanced across educational, promotional and community content. Keep what fits and replace what doesn't.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <span class="card-icon"><svg class="icon"><use href="#i-sparkle"/></svg></span>
+            <h3 data-i18n="how.s3.title">Get ready-to-post content</h3>
+            <p data-i18n="how.s3.text">AI writes the copy, caption and hashtags and lays them out in your brand template as a single post or a carousel. Edit anything, give final approval and export.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="features.eyebrow">Features</p>
+          <h2 data-i18n="features.title">What's in the pilot, and what's coming next</h2>
+          <p class="section-sub" data-i18n="features.sub">We're building QozmixAI step by step with our pilot partner. Here's exactly where each feature stands today.</p>
+        </div>
+
+        <h3 class="group-title"><span class="tag tag-live" data-i18n="features.live">Available in the pilot</span></h3>
+        <div class="grid grid-3">
+          <article class="card">
+            <span class="card-icon"><svg class="icon"><use href="#i-palette"/></svg></span>
+            <h4 data-i18n="f.brand.title">Brand setup &amp; style analysis</h4>
+            <p data-i18n="f.brand.text">A brand questionnaire plus AI analysis of your reference posts, which suggests colours, fonts and layouts for you to approve.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon"><svg class="icon"><use href="#i-calendar"/></svg></span>
+            <h4 data-i18n="f.plan.title">Monthly content plan</h4>
+            <p data-i18n="f.plan.text">Choose how many posts you want and your content mix. Ideas are planned around your business, not generic templates.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon"><svg class="icon"><use href="#i-sparkle"/></svg></span>
+            <h4 data-i18n="f.copy.title">AI copy, captions &amp; hashtags</h4>
+            <p data-i18n="f.copy.text">Copy for every approved idea, written in your brand's voice and shaped to fit each slide.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon"><svg class="icon"><use href="#i-layers"/></svg></span>
+            <h4 data-i18n="f.templates.title">On-brand templates &amp; editor</h4>
+            <p data-i18n="f.templates.text">Single posts and carousels of up to 10 slides in your brand template, fully editable before you export them.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon"><svg class="icon"><use href="#i-shield"/></svg></span>
+            <h4 data-i18n="f.approval.title">Two-step approval</h4>
+            <p data-i18n="f.approval.text">Nothing goes out without you. Approve the idea first, then approve the final design.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon"><svg class="icon"><use href="#i-tag"/></svg></span>
+            <h4 data-i18n="f.facts.title">Fact-safe promotions</h4>
+            <p data-i18n="f.facts.text">The AI never invents prices, discounts, dates or reviews. Only the details you approve appear in your posts.</p>
+          </article>
+        </div>
+
+        <h3 class="group-title"><span class="tag tag-soon" data-i18n="features.soon">In development</span></h3>
+        <div class="grid grid-3">
+          <article class="card card-soon">
+            <span class="card-icon"><svg class="icon"><use href="#i-globe"/></svg></span>
+            <h4 data-i18n="f.korean.title">Natural Korean content</h4>
+            <p data-i18n="f.korean.text">Korean copy that sounds native, not translated, checked by Korean reviewers before it's posted.</p>
+          </article>
+          <article class="card card-soon">
+            <span class="card-icon"><svg class="icon"><use href="#i-send"/></svg></span>
+            <h4 data-i18n="f.publish.title">Scheduling &amp; auto-publishing</h4>
+            <p data-i18n="f.publish.text">Publish directly to Instagram, Facebook, LinkedIn, Naver Blog, YouTube and TikTok.</p>
+          </article>
+          <article class="card card-soon">
+            <span class="card-icon"><svg class="icon"><use href="#i-trend"/></svg></span>
+            <h4 data-i18n="f.trends.title">Trends</h4>
+            <p data-i18n="f.trends.text">Trending topics for your industry, turned into content ideas in one click.</p>
+          </article>
+          <article class="card card-soon">
+            <span class="card-icon"><svg class="icon"><use href="#i-message"/></svg></span>
+            <h4 data-i18n="f.community.title">Community hub</h4>
+            <p data-i18n="f.community.text">Reviews and questions from every platform in one place, with suggested replies.</p>
+          </article>
+          <article class="card card-soon">
+            <span class="card-icon"><svg class="icon"><use href="#i-video"/></svg></span>
+            <h4 data-i18n="f.media.title">Blogs, short videos &amp; AI influencer</h4>
+            <p data-i18n="f.media.text">LinkedIn and Naver Blog posts, short-form videos and a custom AI brand influencer.</p>
+          </article>
+          <article class="card card-soon">
+            <span class="card-icon"><svg class="icon"><use href="#i-zap"/></svg></span>
+            <h4 data-i18n="f.autopilot.title">Autopilot</h4>
+            <p data-i18n="f.autopilot.text">An optional mode that plans and publishes content for you, following the rules you set for your brand.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REAL SCREENSHOTS (shown automatically once images are added to assets/img/screens/) -->
+    <section class="section section-white" id="gallery" hidden>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Inside the MVP</p>
+          <h2 data-i18n="gallery.title">Real screens from our in-progress product</h2>
+        </div>
+        <div class="gallery">
+          <figure data-src="assets/img/screens/posts.png" hidden><figcaption data-i18n="gallery.posts">Monthly plan &amp; post ideas</figcaption></figure>
+          <figure data-src="assets/img/screens/editor.png" hidden><figcaption data-i18n="gallery.editor">Carousel editor</figcaption></figure>
+          <figure data-src="assets/img/screens/calendar.png" hidden><figcaption data-i18n="gallery.calendar">Content calendar</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR -->
+    <section class="section section-white" id="audience">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="aud.eyebrow">Who it's for</p>
+          <h2 data-i18n="aud.title">Built for businesses without a marketing team</h2>
+        </div>
+        <div class="grid grid-2">
+          <article class="card card-lg">
+            <span class="card-icon"><svg class="icon"><use href="#i-store"/></svg></span>
+            <h3 data-i18n="aud.c1.title">Korean SMEs</h3>
+            <p data-i18n="aud.c1.text">Beauty and fitness studios, clinics and other lifestyle and wellness businesses that need an active social media presence but don't have time to run it.</p>
+          </article>
+          <article class="card card-lg">
+            <span class="card-icon"><svg class="icon"><use href="#i-globe"/></svg></span>
+            <h3 data-i18n="aud.c2.title">Foreign startups in Korea</h3>
+            <p data-i18n="aud.c2.text">Founders who want to reach Korean customers with content that feels local, from a team that went through the same thing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOGNITION -->
+    <section class="section" id="recognition">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="rec.eyebrow">Recognition &amp; pilot</p>
+          <h2 data-i18n="rec.title">Early validation from Korea's startup ecosystem</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card rec">
+            <p class="rec-stat">Top 20</p>
+            <h3 data-i18n="rec.c1.title">K-Startup Grand Challenge</h3>
+            <p data-i18n="rec.c1.text">Selected for the Top 20 and currently taking part in the accelerator cohort.</p>
+          </article>
+          <article class="card rec">
+            <p class="rec-stat">Top 11</p>
+            <h3 data-i18n="rec.c2.title">Kyung Hee University Glofers Startup Hackathon</h3>
+            <p data-i18n="rec.c2.text">Selected as one of the Top 11 teams. Final results are still to come.</p>
+          </article>
+          <article class="card rec">
+            <p class="rec-stat" data-i18n="rec.c3.stat">Pilot</p>
+            <h3><a href="https://www.ikbic.com/" target="_blank" rel="noopener">IKBIC</a></h3>
+            <p data-i18n="rec.c3.text">Pilot in progress with the India–Korea Business &amp; Innovation Corridor. We're starting with one pilot so we can get every detail right.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section section-white" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="pricing.eyebrow">Pricing</p>
+          <h2 data-i18n="pricing.title">Planned launch pricing</h2>
+          <p class="section-sub" data-i18n="pricing.sub">Monthly prices at launch. Features marked “In development” will be added as they launch.</p>
+        </div>
+        <div class="grid grid-3 pricing">
+          <article class="card price">
+            <h3>Basic</h3>
+            <p class="price-amount">₩55,000<span data-i18n="pricing.month">/month</span></p>
+            <ul class="checklist">
+              <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="pricing.posts">Posts</span></li>
+              <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="pricing.blogs">Blogs</span></li>
+            </ul>
+          </article>
+          <article class="card price">
+            <h3>Pro</h3>
+            <p class="price-amount">₩75,000<span data-i18n="pricing.month">/month</span></p>
+            <ul class="checklist">
+              <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="pricing.posts">Posts</span></li>
+              <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="pricing.blogs">Blogs</span></li>
+              <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="pricing.videos">Videos</span></li>
+            </ul>
+          </article>
+          <article class="card price">
+            <h3>Premium</h3>
+            <p class="price-amount">₩120,000<span data-i18n="pricing.month">/month</span></p>
+            <ul class="checklist">
+              <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="pricing.posts">Posts</span></li>
+              <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="pricing.blogs">Blogs</span></li>
+              <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="pricing.videos">Videos</span></li>
+              <li><svg class="icon"><use href="#i-check"/></svg><span data-i18n="pricing.influencer">AI influencer</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="team.eyebrow">Team</p>
+          <h2 data-i18n="team.title">An international founding team in Seoul</h2>
+          <p class="section-sub" data-i18n="team.sub">We're international students building the marketing tool we wished existed for Korean small businesses and the startups entering Korea.</p>
+        </div>
+        <div class="grid grid-3 team">
+          <article class="person">
+            <div class="avatar" data-photo="assets/img/team/jannat.jpg" data-alt="Jannat Shreya">JS</div>
+            <h3>Jannat Shreya</h3>
+            <p class="role" data-i18n="team.jannat.role">Founder &amp; CEO</p>
+            <p class="bio" data-i18n="team.jannat.bio">B.S. Business Administration (minor in CSE), Seoul National University · Vice President, Indian Students and Researchers in Korea</p>
+          </article>
+          <article class="person">
+            <div class="avatar" data-photo="assets/img/team/zain.jpg" data-alt="Zain Khaliq">ZK</div>
+            <h3>Zain Khaliq</h3>
+            <p class="role" data-i18n="team.zain.role">Co-founder &amp; CTO</p>
+            <p class="bio" data-i18n="team.zain.bio">B.S. Computer Science and Engineering, Seoul National University · Media Coordinator, Pakistan Students Association in Korea</p>
+          </article>
+          <article class="person">
+            <div class="avatar" data-photo="assets/img/team/aliza.jpg" data-alt="Aliza Khan">AK</div>
+            <h3>Aliza Khan</h3>
+            <p class="role" data-i18n="team.aliza.role">Team member</p>
+            <p class="bio" data-i18n="team.aliza.bio">B.S. Civil Engineering / Artificial Intelligence, Yonsei University · President, Yonsei Foreign Student Union</p>
+            <a class="linkedin" href="https://www.linkedin.com/in/aliza-khan-832a32310" target="_blank" rel="noopener" aria-label="Aliza Khan on LinkedIn">LinkedIn</a>
+          </article>
+        </div>
+
+        <h3 class="group-title advisors-title" data-i18n="team.advisors">Advisory board</h3>
+        <div class="grid grid-2 team">
+          <article class="person person-row">
+            <div class="avatar avatar-sm" data-photo="assets/img/team/bang.jpg" data-alt="Bang Byungcheol">BB</div>
+            <div>
+              <h3>Bang Byungcheol</h3>
+              <p class="bio" data-i18n="team.bang.bio">CEO, BBC &amp; Company · Advisor to the ACRC and MAFRA</p>
+            </div>
+          </article>
+          <article class="person person-row">
+            <div class="avatar avatar-sm" data-photo="assets/img/team/iqbal.jpg" data-alt="Dr. Mohammed Iqbal Khazi">MK</div>
+            <div>
+              <h3>Dr. Mohammed Iqbal Khazi</h3>
+              <p class="bio" data-i18n="team.iqbal.bio">Research Associate Professor, Kyung Hee University · President, Indian Students and Researchers in Korea · CEO, IKBIC</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <p class="eyebrow eyebrow-dark" data-i18n="cta.eyebrow">Early access</p>
+            <h2 data-i18n="cta.title">Want to join the pilot?</h2>
+            <p data-i18n="cta.text">We're working with a small number of businesses first, so we can get every detail right. Tell us about your business and we'll get back to you.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-cta" data-mailto href="mailto:hello@qozmixai.tech?subject=QozmixAI%20early%20access"><svg class="icon"><use href="#i-mail"/></svg><span data-i18n="cta.button">Email us</span></a>
+            <a class="cta-email" href="mailto:hello@qozmixai.tech">hello@qozmixai.tech</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="wordmark">Qozmix<span>AI</span></span>
+        <p class="footer-tag" data-i18n="footer.tag">Less editing, more selling.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@qozmixai.tech">hello@qozmixai.tech</a>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a>
+      </div>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 QozmixAI · Seoul, South Korea</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
